@@ -47,6 +47,7 @@ jobs:
   set-reviewers:
     name: Set reviewers
     runs-on: ubuntu-latest
+    needs: create-pull-request
     timeout-minutes: 1
     steps:
       - name: Set reviewers
