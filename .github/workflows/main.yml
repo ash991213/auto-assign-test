@@ -54,7 +54,7 @@ jobs:
         with:
           github-token: ${{secrets.CREATE_PULL_REQUEST_TOKEN}}
           script: |
-            const reviewers = ["USER_1", "USER_2", "USER_3"];
+            const reviewers = ["ash991213"];
             const actor = context.payload.pull_request.user.login;
             const { owner, repo } = context.repo;
             const prNumber = context.payload.pull_request.number;
